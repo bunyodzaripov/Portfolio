@@ -1,0 +1,169 @@
+/* Contact section style */
+.contact {
+    padding: 6.25rem 1.875rem;
+}
+
+form {
+    padding-top: 3.125rem;
+}
+
+.flex-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 1.25rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    border: 3px solid peachpuff;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding-left: 1.125rem;
+    color: #495057;
+    background-color: aliceblue;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.half-flex {
+    display: flex;
+}
+
+.contact-name {
+    padding-right: 2rem;
+    flex: 1;
+}
+
+.contact-email {
+    padding-left: 2rem;
+    flex: 1;
+}
+
+.flex-button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+}
+
+.form__banner {
+    background-color:rosybrown;
+}
+
+.get-in {
+    color:peachpuff;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.form-button {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: slategrey;
+    background-color: peachpuff;
+    border: 1px solid aliceblue;
+    padding: 0.9375rem 1.875rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-button:hover {
+    background-color: #BF937B;
+    color: snow;
+}
+/* /Contact section style */
+
+
+
+/* Contact Media section */
+@media only screen and (max-width: 991px) {
+    /* Contact section style */
+    .contact-img {
+        display: none;
+    }
+
+    .flex-form, 
+    .get-in{
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex-form {
+        padding-right: 3rem;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 559px) {
+    /* Contact section style */
+    .contact {
+        padding: 0 1px;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+    }
+
+    form{
+        padding-top: 1.5rem;
+    }
+
+    .get-in {
+        padding-top: 1.3rem;
+    }
+
+    .half-flex {
+        flex-direction: column;
+    }
+
+    .contact-email {
+        padding-left: 0;
+    }
+
+    .contact-name {
+        padding-right: 0;
+    }
+
+    input,textarea {
+        padding: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .flex-button {
+        margin-top: 1rem;
+        padding-left: 0;
+    }
+
+    .form-button {
+        padding: 0.8rem;
+    }
+
+    .block {
+        margin-left: 1rem;
+    }
+
+    .flex-form {
+        padding-right: 2.1rem;
+    }
+}
+
+@media only screen and (max-width: 393px) {
+    /* contact section style */
+    .contact {
+        padding-top: 2rem;
+    }
+    .flex-form{
+        padding-right: 2rem;
+    }
+    .form-button {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+}
+/* /Contact Media section */
