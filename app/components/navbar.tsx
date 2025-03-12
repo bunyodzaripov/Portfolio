@@ -2,7 +2,7 @@ import Image from "next/image";
 import { assets } from "@/assets/assets";
 import React, { useRef } from "react";
 
-const navbar = () => {
+const Index = () => {
    const sideMenuRef = useRef<HTMLDivElement | any>(" ");
 
    const openMenu = () => {
@@ -111,4 +111,4 @@ const navbar = () => {
    );
 };
 
-export default navbar;
+export default Index;
