@@ -1,10 +1,12 @@
-import Navbar from "../app/components/navbar";
-import Header from "../app/components/header";
-import About from "../app/components/about";
-import Service from "../app/components/service";
-import Work from "../app/components/work";
-import Contact from "@/app/components/contact";
-import Footer from "@/app/components/footer";
+import {
+   About,
+   Contact,
+   Footer,
+   Header,
+   Navbar,
+   Service,
+   Work,
+} from "./components";
 
 export default function Home() {
    return (
