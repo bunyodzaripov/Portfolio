@@ -10,7 +10,7 @@ const Index = () => {
          whileInView={{ opacity: 1 }}
          transition={{ duration: 1 }}
          id="contact"
-         className="w-full px-[12%] py-10 scroll-mt-20 bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto]"
+         className="w-full px-[12%] py-10 scroll-mt-20 bg-[url(/footer-bg-color.png)] bg-no-repeat bg-center bg-[length:90%_auto]"
       >
          <motion.h4
             initial={{ y: -20, opacity: 0 }}
@@ -35,8 +35,8 @@ const Index = () => {
             transition={{ delay: 0.7, duration: 0.5 }}
             className="text-center max-w-2xl mx-auto mt-5 mb-12"
          >
-            I'd love to hear from you! If you have any questions, comments or
-            feedback, please use the form below.
+            I&apos;d love to hear from you! If you have any questions, comments
+            or feedback, please use the form below.
          </motion.p>
 
          <motion.form

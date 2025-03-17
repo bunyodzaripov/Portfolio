@@ -4,13 +4,17 @@ import { assets } from "@/assets/assets";
 import React, { useEffect, useRef, useState } from "react";
 
 const Index = () => {
-   const sideMenuRef = useRef<HTMLDivElement | any>(" ");
+   const sideMenuRef = useRef<HTMLUListElement | null>(null);
    const [isScroll, setIsScroll] = useState(false);
    const openMenu = () => {
-      sideMenuRef.current.style.transform = "translateX(-16rem)";
+      if (sideMenuRef.current) {
+         sideMenuRef.current.style.transform = "translateX(0)";
+      }
    };
    const closeMenu = () => {
-      sideMenuRef.current.style.transform = "translateX(16rem)";
+      if (sideMenuRef.current) {
+         sideMenuRef.current.style.transform = "translateX(16rem)";
+      }
    };
 
    useEffect(() => {

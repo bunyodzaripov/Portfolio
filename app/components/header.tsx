@@ -23,7 +23,7 @@ const Index = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex items-center gap-2 text-xl md:text-2x1 mb-3"
          >
-            Hi ! I`m William Mark{" "}
+            Hi ! I&apos;m William Mark{" "}
             <Image src={assets.hand_icon} alt="hand" className="w-6" />
          </motion.h3>
          <motion.h1
