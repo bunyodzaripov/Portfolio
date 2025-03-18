@@ -70,10 +70,19 @@ const Index = () => {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 1.1, duration: 0.5 }}
         href="#work"
-        className="mx-auto my-20 flex w-max items-center justify-center gap-2 rounded-full border-[0.5px] border-gray-700 px-10 py-3 text-gray-700 duration-500 hover:bg-[#fcf4ff]"
+        className="group font-outfit mx-auto my-20 flex w-max items-center justify-center gap-2 rounded-full border-[0.5px] border-gray-700 px-10 py-3 text-gray-700 duration-500 hover:bg-[#202020] hover:text-white"
       >
         Show more
-        <Image src={assets.right_arrow} alt="arrow" className="w-4" />
+        <Image
+          src={assets.right_arrow}
+          alt="arrow"
+          className="w-4 group-hover:hidden"
+        />
+        <Image
+          src={assets.right_arrow_white}
+          alt="arrow white"
+          className="hidden w-4 group-hover:block"
+        />
       </motion.a>
     </motion.div>
   );

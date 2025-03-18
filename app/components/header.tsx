@@ -49,10 +49,19 @@ const Index = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
           href="#contact"
-          className="font-outfit flex items-center gap-2 rounded-full border border-white bg-black px-10 py-3 text-white"
+          className="group font-outfit flex items-center gap-2 rounded-full border-[0.5px] border-gray-700 px-10 py-3 text-gray-700 duration-500 hover:bg-[#202020] hover:text-white"
         >
-          contact me{" "}
-          <Image src={assets.right_arrow_white} alt="arrow" className="w-4" />
+          contact me
+          <Image
+            src={assets.right_arrow}
+            alt="arrow"
+            className="w-4 group-hover:hidden"
+          />
+          <Image
+            src={assets.right_arrow_white}
+            alt="arrow white"
+            className="hidden w-4 group-hover:block"
+          />
         </motion.a>
         <motion.a
           initial={{ y: 30, opacity: 0 }}
@@ -60,10 +69,14 @@ const Index = () => {
           transition={{ duration: 0.6, delay: 1.2 }}
           href="/sample-resume.pdf"
           download
-          className="font-outfit flex items-center gap-2 rounded-full border border-gray-500 px-10 py-3"
+          className="group font-outfit flex items-center gap-2 rounded-full border-[0.5px] border-gray-700 px-10 py-3 text-gray-700 duration-500 hover:bg-[#202020] hover:text-white"
         >
           my resume
-          <Image src={assets.download_icon} alt="download" className="w-4" />
+          <Image
+            src={assets.download_icon}
+            alt="download"
+            className="w-4 group-hover:animate-bounce group-hover:invert"
+          />
         </motion.a>
       </div>
     </div>

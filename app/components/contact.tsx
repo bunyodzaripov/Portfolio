@@ -79,10 +79,19 @@ const Index = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
           type="submit"
-          className="mx-auto flex w-max cursor-pointer items-center justify-between gap-2 rounded-full bg-black/80 px-8 py-3 text-white duration-500 hover:bg-black"
+          className="group mx-auto flex w-max cursor-pointer items-center justify-between gap-2 rounded-full border-[0.5px] border-gray-700 px-8 py-3 duration-500 hover:bg-[#202020] hover:text-white"
         >
-          Submit now{" "}
-          <Image src={assets.right_arrow_white} alt="arrow" className="w-4" />
+          Submit now
+          <Image
+            src={assets.right_arrow}
+            alt="arrow"
+            className="w-4 group-hover:hidden"
+          />
+          <Image
+            src={assets.right_arrow_white}
+            alt="arrow white"
+            className="hidden w-4 group-hover:block"
+          />
         </motion.button>
       </motion.form>
     </motion.div>

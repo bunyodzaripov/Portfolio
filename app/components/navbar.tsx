@@ -77,10 +77,21 @@ const Index = () => {
 
           <a
             href="#contact"
-            className="font-outfit ml-4 hidden items-center gap-3 rounded-full border border-gray-500 px-10 py-2.5 lg:flex"
+            className="group font-outfit relative ml-4 hidden items-center gap-3 rounded-full border border-gray-500 px-10 py-2.5 text-gray-700 duration-500 hover:bg-[#202020] hover:text-white lg:flex"
           >
             Contact
-            <Image src={assets.arrow_icon} alt="arrow" className="w-3" />
+            <div className="relative h-3 w-3">
+              <Image
+                src={assets.arrow_icon}
+                alt="arrow"
+                className="absolute opacity-100 transition-opacity duration-500 group-hover:opacity-0"
+              />
+              <Image
+                src={assets.arrow_icon_dark}
+                alt="arrow white"
+                className="absolute opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+              />
+            </div>
           </a>
 
           <button className="block cursor-pointer md:hidden" onClick={openMenu}>
