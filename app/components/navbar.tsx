@@ -47,7 +47,7 @@ const Index = () => {
         </a>
 
         <ul
-          className={`hidden items-center gap-6 rounded-full px-12 py-3 md:flex lg:gap-8 ${
+          className={`font-outfit hidden items-center gap-6 rounded-full px-12 py-3 md:flex lg:gap-8 ${
             isScroll ? "" : "bg-white/50 shadow-sm"
           } `}
         >
@@ -57,7 +57,7 @@ const Index = () => {
             </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">About me</a>
           </li>
           <li>
             <a href="#services">Services</a>
@@ -77,7 +77,7 @@ const Index = () => {
 
           <a
             href="#contact"
-            className="ml-4 hidden items-center gap-3 rounded-full border border-gray-500 px-10 py-2.5 lg:flex"
+            className="font-outfit ml-4 hidden items-center gap-3 rounded-full border border-gray-500 px-10 py-2.5 lg:flex"
           >
             Contact
             <Image src={assets.arrow_icon} alt="arrow" className="w-3" />
@@ -107,7 +107,7 @@ const Index = () => {
           </li>
           <li>
             <a href="#about" onClick={closeMenu}>
-              About
+              About me
             </a>
           </li>
           <li>
@@ -122,7 +122,7 @@ const Index = () => {
           </li>
           <li>
             <a href="#contact" onClick={closeMenu}>
-              Contact me
+              Contact
             </a>
           </li>
         </ul>

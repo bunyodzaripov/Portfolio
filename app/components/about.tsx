@@ -64,7 +64,7 @@ const Index = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="grid max-w-2/1 grid-cols-1 gap-6 sm:grid-cols-3"
+            className="font-outfit grid max-w-2/1 grid-cols-1 gap-6 sm:grid-cols-3"
           >
             {infoList.map(({ icon, title, description }, index) => (
               <motion.li

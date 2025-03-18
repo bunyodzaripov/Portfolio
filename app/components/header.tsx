@@ -49,7 +49,7 @@ const Index = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
           href="#contact"
-          className="flex items-center gap-2 rounded-full border border-white bg-black px-10 py-3 text-white"
+          className="font-outfit flex items-center gap-2 rounded-full border border-white bg-black px-10 py-3 text-white"
         >
           contact me{" "}
           <Image src={assets.right_arrow_white} alt="arrow" className="w-4" />
@@ -60,7 +60,7 @@ const Index = () => {
           transition={{ duration: 0.6, delay: 1.2 }}
           href="/sample-resume.pdf"
           download
-          className="flex items-center gap-2 rounded-full border border-gray-500 px-10 py-3"
+          className="font-outfit flex items-center gap-2 rounded-full border border-gray-500 px-10 py-3"
         >
           my resume
           <Image src={assets.download_icon} alt="download" className="w-4" />

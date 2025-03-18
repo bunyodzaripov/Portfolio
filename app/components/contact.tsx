@@ -43,7 +43,7 @@ const Index = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.5 }}
-        className="mx-auto max-w-2xl"
+        className="font-outfit mx-auto max-w-2xl"
       >
         <div className="mt-10 mb-8 grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-6">
           <motion.input

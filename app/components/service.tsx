@@ -43,7 +43,7 @@ const Index = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.6 }}
-        className="mt-10 grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-6"
+        className="font-outfit mt-10 grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-6"
       >
         {serviceData.map(({ icon, title, description, link }, index) => (
           <motion.div

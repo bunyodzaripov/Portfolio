@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Index = () => {
   return (
-    <div className="mt-20">
+    <div className="font-outfit mt-20">
       <div className="text-center">
         <Image src={assets.logo} alt="logo" className="mx-auto mb-2 w-36" />
 

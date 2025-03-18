@@ -53,7 +53,7 @@ const Index = () => {
             className="group relative aspect-square cursor-pointer rounded-lg bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${project.bgImage})` }}
           >
-            <div className="absolute bottom-5 left-1/2 flex w-10/12 -translate-x-1/2 items-center justify-between rounded-md bg-white px-5 py-3 duration-500 group-hover:bottom-7">
+            <div className="font-outfit absolute bottom-5 left-1/2 flex w-10/12 -translate-x-1/2 items-center justify-between rounded-md bg-white px-5 py-3 duration-500 group-hover:bottom-7">
               <div>
                 <h2 className="font-semibold">{project.title}</h2>
                 <p className="text-sm text-gray-700">{project.description}</p>
